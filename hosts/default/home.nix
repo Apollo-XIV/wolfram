@@ -36,6 +36,10 @@
     # '')
   ];
 
+  programs.kitty = {
+    shellIntegration.enableZshIntegration = true;
+    theme = "Aquarium Dark";
+  };
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
