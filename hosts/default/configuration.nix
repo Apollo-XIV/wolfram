@@ -142,6 +142,7 @@
     swww
     waybar
     networkmanagerapplet
+    starship
     bat
     eza
     zsh
