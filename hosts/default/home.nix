@@ -66,7 +66,7 @@
           insert = "bar";
           normal = "block";
           select = "underline";
-        }
+        };
         lsp = {
           auto-signature-help = false;
           display-messages = false;
@@ -75,14 +75,10 @@
           left = ["mode" "spinner" "version-control" "file-name"]
         };
       };
-    }
+    };
     keys.normal = {
       alt.comma = "goto_previous_buffer";
-      alt.stop = "goto_previous_buffer";
-      alt.comma = "goto_previous_buffer";
-      alt.comma = "goto_previous_buffer";
-      
-      
+      alt.stop = "goto_next_buffer";
     };
   };
 
