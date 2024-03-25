@@ -35,6 +35,15 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+    settings = {
+      add_newline = false;
+    };
+  };
+  
   programs.git = {
     enable = true;
     lfs.enable = true;
