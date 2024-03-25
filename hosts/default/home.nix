@@ -72,7 +72,7 @@
           display-messages = false;
         };
         status-line = {
-          left = ["mode" "spinner" "version-control" "file-name"]
+          left = ["mode" "spinner" "version-control" "file-name"];
         };
       };
     };
