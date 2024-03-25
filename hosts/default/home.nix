@@ -62,7 +62,8 @@
         line-number = "relative";
         bufferline = "multiple";
         cursorline = true;
-        columnline = true;
+        cursorcolumn = true;
+        file-picker.hidden = false;
         cursor-shape = {
           insert = "bar";
           normal = "block";
@@ -72,13 +73,17 @@
           auto-signature-help = false;
           display-messages = false;
         };
-        status-line = {
+        statusline = {
           left = ["mode" "spinner" "version-control" "file-name"];
         };
       };
       keys.normal = {
-        alt.comma = "goto_previous_buffer";
-        alt.stop = "goto_next_buffer";
+        "A-," = "goto_previous_buffer";
+        "A-." = "goto_next_buffer";
+        "A-w" = ":buffer-close";
+      };
+      keys.insert = {
+        j = { k = "normal_mode"; };
       };
     };
   };
