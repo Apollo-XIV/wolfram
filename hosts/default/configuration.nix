@@ -38,6 +38,7 @@
     fira-code
     fira-code-symbols
   ];
+
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
