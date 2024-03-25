@@ -37,9 +37,15 @@
   ];
 
   programs.kitty = {
+    enable = true;
+    environment = {
+      "EDITOR" = "hx";
+    };
+    font.name = "Fira Code";
     shellIntegration.enableZshIntegration = true;
     theme = "Aquarium Dark";
   };
+
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
