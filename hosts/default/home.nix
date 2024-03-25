@@ -31,9 +31,12 @@
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
     # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
+    (pkgs.writeShellScriptBin "rebuild" ''
+      git add .
+      git commit
+      sudo nixos-rebuild switch --flake ~/.config/nixos#default && \
+      git push
+    '')
   ];
 
   programs.kitty = {
@@ -140,6 +143,8 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
+    EDITOR = "hx";
+    config = "~/.config/nixos/";
   };
 
   # Let Home Manager install and manage itself.
