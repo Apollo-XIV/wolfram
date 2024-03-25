@@ -39,10 +39,6 @@
     '')
   ];
 
-  programs.hyprlock = {
-    enable = true;
-  };
-
   programs.kitty = {
     enable = true;
     environment = {
