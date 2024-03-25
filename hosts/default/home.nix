@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  inputs = {
-    hyprlock.url = "github:hyprwm/Hyprlock";
-  };
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "acrease";
