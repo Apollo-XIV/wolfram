@@ -48,7 +48,7 @@
       font_features = "FiraCode-Retina +zero +onum";
       cursor_shape = "beam";
       window_margin_width = 10;
-    }
+    };
   };
 
   programs.starship = {
