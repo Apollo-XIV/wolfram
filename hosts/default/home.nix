@@ -75,10 +75,10 @@
           left = ["mode" "spinner" "version-control" "file-name"];
         };
       };
-    };
-    keys.normal = {
-      alt.comma = "goto_previous_buffer";
-      alt.stop = "goto_next_buffer";
+      keys.normal = {
+        alt.comma = "goto_previous_buffer";
+        alt.stop = "goto_next_buffer";
+      };
     };
   };
 
