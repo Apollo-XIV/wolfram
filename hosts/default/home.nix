@@ -32,10 +32,10 @@
     # # configuration. For example, this adds a command 'my-hello' to your
     # # environment:
     (pkgs.writeShellScriptBin "rebuild" ''
-      git add .
-      git commit
+      git -C ~/.config/nixos/ add .
+      git -C ~/.config/nixos/ commit
       sudo nixos-rebuild switch --flake ~/.config/nixos#default && \
-      git push
+      git -C ~/.config/nixos/ push
     '')
   ];
 
