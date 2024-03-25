@@ -34,6 +34,10 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
+  fonts.packages = with pkgs; [
+    fira-code
+    fira-code-symbols
+  ];
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
