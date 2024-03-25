@@ -39,6 +39,14 @@
     '')
   ];
 
+  programs.firefox = {
+    profiles.acrease = {
+      extensions = with pkgs.nur.rycee.firefox-addons; [
+        ublock-origin
+      ];
+    };
+  };
+  
   programs.hyprlock.enable = true;
   programs.kitty = {
     enable = true;
