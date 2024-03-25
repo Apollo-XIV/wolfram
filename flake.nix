@@ -21,7 +21,7 @@
         {
           home-manager.users.acrease = {
             imports = [
-              hyprlock.homeManagerModules.hyprlock;
+              hyprlock.homeManagerModules.hyprlock
             ];
           };
         }
