@@ -57,7 +57,7 @@
     settings = {
       theme = "kanagawa";
       editor = {
-        rulers = [80, 120];
+        rulers = [80 120];
         line-number = "relative";
         bufferline = "multiple";
         cursorline = true;
