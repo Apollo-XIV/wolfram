@@ -17,7 +17,6 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/default/configuration.nix
-        hyprlock
         inputs.home-manager.nixosModules.default
         {
           home-manager.users.acrease = {
