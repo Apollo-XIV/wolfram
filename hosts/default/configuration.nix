@@ -123,6 +123,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.sessionVariables = {
+    EDITOR = "hx";
     NIXOS_OZONE_WL = "1";
     WLR_NO_HARDWARE_CURSORS = "1";
   };
