@@ -51,6 +51,41 @@
     };
   };
 
+  programs.helix = {
+    defaultEditor = true;
+    extraPackages = [];
+    settings = {
+      theme = "kanagawa";
+      editor = {
+        rulers = [80, 120];
+        line-number = "relative";
+        bufferline = "multiple";
+        cursorline = true;
+        columnline = true;
+        cursor-shape = {
+          insert = "bar";
+          normal = "block";
+          select = "underline";
+        }
+        lsp = {
+          auto-signature-help = false;
+          display-messages = false;
+        };
+        status-line = {
+          left = ["mode" "spinner" "version-control" "file-name"]
+        };
+      };
+    }
+    keys.normal = {
+      alt.comma = "goto_previous_buffer";
+      alt.stop = "goto_previous_buffer";
+      alt.comma = "goto_previous_buffer";
+      alt.comma = "goto_previous_buffer";
+      
+      
+    };
+  };
+
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
