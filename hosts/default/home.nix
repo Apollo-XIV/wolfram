@@ -35,6 +35,17 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+  programs.git = {
+    enable = true;
+    lfs.enable = true;
+    userEmail = "alex@crease.sh";
+    userName = "acrease";
+  };
+
+  programs.lazygit = {
+    enable = true;
+    settings = {};
+  };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
