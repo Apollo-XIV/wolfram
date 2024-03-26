@@ -40,6 +40,7 @@
   ];
 
   programs.firefox = {
+    enable = true;
     profiles.acrease = {
       extensions = with pkgs.nur.rycee.firefox-addons; [
         ublock-origin
