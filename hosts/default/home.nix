@@ -1,6 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
+  inputs = [
+    inputs.nur.hmModules.nur
+  ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "acrease";
