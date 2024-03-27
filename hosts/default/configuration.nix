@@ -41,6 +41,8 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
+    useGlobalPkgs = true;
+    useUserPackages = true;
     users = {
       "acrease" = import ./home.nix;
     };
@@ -121,6 +123,16 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+ 
+  # nixpkgs.config.packageOverrides = pkgs: {
+  #   nur = import (builtins.fetchTarball {
+  #     url = "https://github.com/nix-community/NUR/archive/master.tar.gz";
+  #     sha256 = "0b3xg1b7v14bkmhpjp56f0j7ghjmb25mq4m7qjawwdyyk67ys22p";
+  #   }) {
+  #     inherit pkgs;
+  #   };
+  # };
+
 
   environment.sessionVariables = {
     EDITOR = "hx";

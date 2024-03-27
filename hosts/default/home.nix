@@ -1,9 +1,16 @@
 { config, pkgs, inputs, ... }:
 
+# let
+#   nur-pkgs = import (builtins.fetchTarball  {
+#     url = "https://github.com/nix-community/NUR/archive/master.tar.gz";
+#     sha256 = "0b3xg1b7v14bkmhpjp56f0j7ghjmb25mq4m7qjawwdyyk67ys22p";
+#   }) {};
+
+# in
+let
+  nurNoPkgs = import inputs.nur { pkgs = null; nurpkgs = pkgs; };
+in
 {
-  inputs = [
-    inputs.nur.hmModules.nur
-  ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "acrease";
@@ -46,7 +53,7 @@
   programs.firefox = {
     enable = true;
     profiles.acrease = {
-      extensions = with pkgs.nur.rycee.firefox-addons; [
+      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         ublock-origin
       ];
     };

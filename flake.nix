@@ -12,13 +12,21 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprlock, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, hyprlock, nur, ... }@inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        ./hosts/default/configuration.nix
+        ({pkgs, ...}: {
+          nixpkgs.overlays = [nur.overlay];
+          imports = [
+            ./hosts/default/configuration.nix
+          ];
+        })          
         inputs.home-manager.nixosModules.default
+        nur.nixosModules.nur
         {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
           home-manager.users.acrease = {
             imports = [
               hyprlock.homeManagerModules.hyprlock
