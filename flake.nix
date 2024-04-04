@@ -27,8 +27,8 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/default/configuration.nix
-        inputs.hyprland.homeManagerModules.default
-        {wayland.windowManager.hyprland.enable = true;}
+        hyprland.homeManagerModules.default
+        # {wayland.windowManager.hyprland.enable = true;}
         inputs.home-manager.nixosModules.default
         nur.nixosModules.nur
         {
