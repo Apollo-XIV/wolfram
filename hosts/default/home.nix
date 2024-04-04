@@ -57,7 +57,12 @@ in
     '')
   ];
 
-  programs.spotify-tui.enable = true;
+  programs.ncspot = {
+    enable = true;
+    settings = ''
+      
+    ''; # toml config file
+  };
 
   programs.firefox = {
     enable = true;
