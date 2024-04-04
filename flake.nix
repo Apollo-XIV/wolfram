@@ -26,7 +26,6 @@
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        nixpkgs.overlays = [nur.overlay];
         ./hosts/default/configuration.nix
         hyprland.homeManagerModules.default
         # {wayland.windowManager.hyprland.enable = true;}
