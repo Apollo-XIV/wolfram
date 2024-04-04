@@ -38,7 +38,6 @@ in
     # pkgs.hello
     pkgs.discord
     pkgs.zoxide
-    pkgs.spotify-tui
     pkgs.fzf
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
@@ -57,6 +56,8 @@ in
       git -C ~/.config/nixos/ push
     '')
   ];
+
+  programs.spotify-tui.enable = true;
 
   programs.firefox = {
     enable = true;
