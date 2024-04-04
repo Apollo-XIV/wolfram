@@ -59,9 +59,7 @@ in
 
   programs.ncspot = {
     enable = true;
-    settings = ''
-      
-    ''; # toml config file
+    settings = {}; # toml config file
   };
 
   programs.firefox = {
