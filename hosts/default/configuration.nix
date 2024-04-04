@@ -135,6 +135,21 @@
 
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.enable = true;
+  wayland.windowManager.hyprland.settings = {
+      "$mod" = "SUPER";
+      "$menu" = "rofi --show drun ssh";
+      "$terminal" = "kitty";
+      "$fileManager" = "dolphin";
+      input = {
+        kb_layout = "gb";
+      };
+
+
+      bind = [
+        "$mod, r, exec, rofi -show drun ssh"
+      ];
+    }
+
 
   environment.sessionVariables = {
     EDITOR = "hx";
