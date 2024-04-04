@@ -22,7 +22,7 @@
     shellAliases = {
       tree = "eza --tree --icons --group-directories-first";
       ls = "eza -ahl --icons --group-directories-first"
-    }
+    };
 
     syntaxHighlighting = {
       enable = true;
