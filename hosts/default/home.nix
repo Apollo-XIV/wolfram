@@ -11,6 +11,11 @@ let
   nurNoPkgs = import inputs.nur { pkgs = null; nurpkgs = pkgs; };
 in
 {
+  imports = [
+    ../../modules/home-manager/kitty.nix
+    ../../modules/home-manager/zsh.nix
+    ../../modules/home-manager/helix.nix
+  ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "acrease";
