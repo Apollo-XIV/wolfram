@@ -14,16 +14,22 @@
   };
 
   outputs = { self, nixpkgs, home-manager, hyprland, hyprlock, nur, ... }@inputs: {
+    # homeConfigurations."acrease" = home-manager.lib.homeManagerConfiguration {
+    #   pkgs = nixpkgs.legacyPackages.x86_64-linux;
+
+    #   modules = [
+    #     hyprland.homeManagerModules.default
+    #     {wayland.windowManager.hyprland.enable = true;}
+    #     # ...
+    #   ];
+    # };
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        ({pkgs, ...}: {
-          nixpkgs.overlays = [nur.overlay];
-          imports = [
-            ./hosts/default/configuration.nix
-          ];
-        })          
+        nixpkgs.overlays = [nur.overlay];
+        ./hosts/default/configuration.nix
         hyprland.homeManagerModules.default
+        # {wayland.windowManager.hyprland.enable = true;}
         inputs.home-manager.nixosModules.default
         nur.nixosModules.nur
         {

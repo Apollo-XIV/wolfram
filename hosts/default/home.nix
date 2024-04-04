@@ -74,7 +74,7 @@ in
     };
   };
   
-  programs.wayland.windowManager.hyprland.settings = {
+  wayland.windowManager.hyprland.settings = {
       "$mod" = "SUPER";
       "$menu" = "rofi --show drun ssh";
       "$terminal" = "kitty";
