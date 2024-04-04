@@ -74,6 +74,20 @@ in
     };
   };
   
+  programs.wayland.windowManager.hyprland.settings = {
+      "$mod" = "SUPER";
+      "$menu" = "rofi --show drun ssh";
+      "$terminal" = "kitty";
+      "$fileManager" = "dolphin";
+      input = {
+        kb_layout = "gb";
+      };
+
+
+      bind = [
+        "$mod, r, exec, rofi -show drun ssh"
+      ];
+  };
   programs.hyprlock.enable = true;
 
   programs.helix = {
