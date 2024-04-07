@@ -17,6 +17,7 @@
     # homeConfigurations."acrease" = home-manager.lib.homeManagerConfiguration {
     #   pkgs = nixpkgs.legacyPackages.x86_64-linux;
 
+        # {wayland.windowManager.hyprland.enable = true;}
     #   modules = [
     #     hyprland.homeManagerModules.default
     #     {wayland.windowManager.hyprland.enable = true;}
@@ -28,7 +29,6 @@
       modules = [
         ./hosts/default/configuration.nix
         hyprland.homeManagerModules.default
-        # {wayland.windowManager.hyprland.enable = true;}
         inputs.home-manager.nixosModules.default
         nur.nixosModules.nur
         {
