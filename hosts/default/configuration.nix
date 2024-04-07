@@ -155,6 +155,7 @@
     dunst
     libnotify
     swww
+    obsidian
     waybar
     networkmanagerapplet
     starship
