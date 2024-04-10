@@ -166,6 +166,7 @@
     bat
     eza
     zsh
+    python3
   #  wget
   ];
 
