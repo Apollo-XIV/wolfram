@@ -27,10 +27,14 @@
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        ./hosts/default/configuration.nix
-        hyprland.homeManagerModules.default
         inputs.home-manager.nixosModules.default
         nur.nixosModules.nur
+        ({pkgs, ...}: {
+          nixpkgs.overlays = [nur.overlay];
+          imports = [
+            ./hosts/default/configuration.nix
+          ];
+        })    
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;

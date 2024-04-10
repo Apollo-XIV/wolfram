@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, hyprland, ... }:
 
 # let
 #   nur-pkgs = import (builtins.fetchTarball  {
@@ -9,6 +9,7 @@
 # in
 let
   nurNoPkgs = import inputs.nur { pkgs = null; nurpkgs = pkgs; };
+        # hyprland.homeManagerModules.default
 in
 {
   imports = [
@@ -74,20 +75,20 @@ in
     };
   };
   
-  # wayland.windowManager.hyprland.settings = {
-  #     "$mod" = "SUPER";
-  #     "$menu" = "rofi --show drun ssh";
-  #     "$terminal" = "kitty";
-  #     "$fileManager" = "dolphin";
-  #     input = {
-  #       kb_layout = "gb";
-  #     };
+  wayland.windowManager.hyprland.settings = {
+      "$mod" = "SUPER";
+      "$menu" = "rofi --show drun ssh";
+      "$terminal" = "kitty";
+      "$fileManager" = "dolphin";
+      input = {
+        kb_layout = "gb";
+      };
 
 
-  #     bind = [
-  #       "$mod, r, exec, rofi -show drun ssh"
-  #     ];
-  # };
+      bind = [
+        "$mod, r, exec, rofi -show drun ssh"
+      ];
+  };
   programs.hyprlock.enable = true;
 
   programs.helix = {
