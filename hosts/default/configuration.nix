@@ -167,7 +167,7 @@
     eza
     zsh
     python3
-    pip
+    python311Packages.pip
     spotify
     teams-for-linux
   #  wget
