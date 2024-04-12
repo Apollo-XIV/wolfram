@@ -168,8 +168,11 @@
     zsh
     python3
     python311Packages.pip
+    python311Packages.python-lsp-server
     spotify
     teams-for-linux
+    vscode-langservers-extracted
+    
   #  wget
   ];
 
