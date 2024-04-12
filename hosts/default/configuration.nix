@@ -167,6 +167,9 @@
     eza
     zsh
     python3
+    pip
+    spotify
+    teams-for-linux
   #  wget
   ];
 
