@@ -157,6 +157,9 @@
     zellij    
     rofi-wayland
     dunst
+    gimp
+    mypy
+    pinta
     libnotify
     swww
     obsidian
@@ -172,8 +175,8 @@
     spotify
     teams-for-linux
     vscode-langservers-extracted
+    wget
     
-  #  wget
   ];
 
   xdg.portal = {
