@@ -172,6 +172,8 @@
     python3
     python311Packages.pip
     python311Packages.python-lsp-server
+    terraform
+    terraform-ls
     spotify
     teams-for-linux
     vscode-langservers-extracted
