@@ -1,8 +1,8 @@
 ![image](https://github.com/Apollo-XIV/wolfram/assets/119538960/8947abd4-095a-4d35-82aa-8d1e01f65183)
 # Wolfram Terminal
-this is a simple python program that generates the output of different rules from Stephen Wolfram's 1D cellular automata. You can read more about them in ![his book, 'A New Kind of Science'](https://www.wolframscience.com/nks/)
+this is a simple python program that generates the output of different rules from Stephen Wolfram's 1D cellular automata. You can read more about them in ![his book, 'A New Kind of Science'](https://www.wolframscience.com/nks/).
 ## Manual Installation
-As of now, only a manual installation is available
+As of now, only a manual installation is available.
 ```sh
 git clone https://github.com/Apollo-XIV/wolfram.git
 cd wolfram
