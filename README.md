@@ -1,4 +1,4 @@
-![image](https://github.com/Apollo-XIV/wolfram/assets/119538960/8947abd4-095a-4d35-82aa-8d1e01f65183)
+![rule 30](https://github.com/Apollo-XIV/wolfram/assets/119538960/8947abd4-095a-4d35-82aa-8d1e01f65183)
 # Wolfram Terminal
 this is a simple python program that generates the output of different rules from Stephen Wolfram's 1D cellular automata. You can read more about them in ![his book, 'A New Kind of Science'](https://www.wolframscience.com/nks/).
 ## Manual Installation
@@ -20,4 +20,4 @@ Options:
   --help                       Show this message and exit.
 
 ```
-![image](https://github.com/Apollo-XIV/wolfram/assets/119538960/b0546544-bd3b-4fa9-aa74-2b33673fb942)
+![rule 161](https://github.com/Apollo-XIV/wolfram/assets/119538960/b0546544-bd3b-4fa9-aa74-2b33673fb942)
