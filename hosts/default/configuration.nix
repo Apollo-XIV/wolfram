@@ -181,6 +181,10 @@
     grim
     feh
     pinta
+    wl-clipboard
+    jq
+    slurp
+    libnotify
   ];
 
   xdg.portal = {
