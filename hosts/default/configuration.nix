@@ -178,7 +178,9 @@
     teams-for-linux
     vscode-langservers-extracted
     wget
-    
+    grim
+    feh
+    pinta
   ];
 
   xdg.portal = {
