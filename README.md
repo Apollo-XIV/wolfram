@@ -20,4 +20,4 @@ Options:
   --help                       Show this message and exit.
 
 ```
-![image](https://github.com/Apollo-XIV/wolfram/assets/119538960/76c40507-5af9-4c55-8793-951848f7928b)
+![image](https://github.com/Apollo-XIV/wolfram/assets/119538960/b0546544-bd3b-4fa9-aa74-2b33673fb942)
