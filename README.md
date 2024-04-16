@@ -6,7 +6,7 @@ As of now, only a manual installation is available.
 ```sh
 git clone https://github.com/Apollo-XIV/wolfram.git
 cd wolfram
-pip install -r requirements.txt
+pip install -r requirements.txt .
 ```
 thats it! you can now use the program.
 ## Usage
